@@ -1,32 +1,32 @@
 export const en = {
   nav: {
     home: "Home",
-    apartments: "Apartments",
-    amenities: "Amenities",
+    apartments: "Farms",
+    amenities: "Services",
     gallery: "Gallery",
     contact: "Contact",
-    bookNow: "Book Now"
+    bookNow: "Book Farm"
   },
   hero: {
-    subtitle: "BEACHFRONT LUXURY ACCOMMODATION",
-    title: "Experience Seaside Tranquility",
-    description: "Discover our exclusive collection of luxury beachfront apartments and hotel rooms, offering unparalleled comfort and breathtaking sea views.",
-    bookStay: "Book Your Stay",
-    exploreApartments: "Explore Apartments",
+    subtitle: "JORDAN'S PREMIER FARM RENTAL PLATFORM",
+    title: "Discover Perfect Farm Getaways",
+    description: "Explore Jordan's finest farms for rent across all governorates. From family-friendly retreats to youth adventures, find your perfect farm experience with sanitized pools and premium cleanliness standards.",
+    bookStay: "Book Your Farm",
+    exploreApartments: "Explore Farms",
     scrollDown: "Scroll Down"
   },
   footer: {
-    description: "Luxurious beachfront apartments and hotel rooms with stunning sea views, offering the perfect blend of comfort and elegance for your dream vacation.",
+    description: "Jordan's leading farm rental platform connecting customers with premium farms across all governorates. Experience clean, sanitized facilities with full customer support and transportation services.",
     quickLinks: "Quick Links",
     contact: "Contact",
     newsletter: "Newsletter",
-    newsletterDesc: "Subscribe to our newsletter for special deals and updates.",
+    newsletterDesc: "Subscribe for exclusive farm deals and special offers.",
     yourEmail: "Your email address",
     subscribe: "Subscribe",
     allRights: "All rights reserved."
   },
   bookingForm: {
-    title: "Book Your Stay",
+    title: "Book Your Farm",
     checkIn: "Check-in Date",
     checkOut: "Check-out Date",
     adults: "Adults",
@@ -34,8 +34,8 @@ export const en = {
     adult: "Adult",
     child: "Child",
     selectDate: "Select date",
-    checkAvailability: "Check Availability",
-    bookingConfirmed: "Booking Confirmed!"
+    checkAvailability: "Check Farm Availability",
+    bookingConfirmed: "Farm Booking Confirmed!"
   },
   testimonials: {
     title: "What Our Guests Say",
@@ -48,64 +48,64 @@ export const en = {
   },
   home: {
     welcome: {
-      subtitle: "Welcome to MareSereno",
-      title: "Luxury Seaside Accommodations",
-      description1: "Nestled on the pristine Mediterranean coastline, MareSereno offers an exquisite collection of luxury apartments and hotel rooms. Our beachfront accommodations combine elegant design with modern comfort, creating the perfect setting for an unforgettable seaside getaway.",
-      description2: "Whether you're seeking a romantic escape, a family vacation, or a peaceful retreat, our diverse range of accommodations caters to every preference and need. Each space is thoughtfully designed to provide panoramic sea views and direct beach access.",
+      subtitle: "Welcome to Jordan Farm Rentals",
+      title: "Premium Farm Experiences Across Jordan",
+      description1: "Discover Jordan's finest farms for rent across all governorates. Our comprehensive platform connects you with premium agricultural properties, offering authentic farm experiences with modern amenities and guaranteed cleanliness standards.",
+      description2: "Whether you're planning a family gathering, youth retreat, or special celebration, our diverse selection of farms caters to every need. Each property features sanitized swimming pools, pristine facilities, and direct access to farm activities.",
       learnMore: "Learn More"
     },
     booking: {
-      subtitle: "Book Your Stay",
-      title: "Reserve Your Perfect Getaway",
-      description: "Take the first step towards your dream vacation by checking availability and securing your preferred dates. Our simple booking process ensures a seamless experience from reservation to arrival.",
-      benefits: ["Instant confirmation", "Best rate guarantee", "Flexible cancellation options", "Secure payment"]
+      subtitle: "Book Your Farm",
+      title: "Reserve Your Perfect Farm Experience",
+      description: "Secure your ideal farm rental with our simple booking system. We handle all arrangements including transportation, customer services, and direct communication with our team.",
+      benefits: ["Instant farm confirmation", "Transportation included", "Customer service support", "Sanitized facilities guarantee"]
     },
     featuredApartments: {
-      subtitle: "Our Accommodations",
-      title: "Featured Apartments",
-      description: "Discover our most popular accommodation options, each offering a perfect blend of comfort, style, and breathtaking sea views.",
-      viewAll: "View All Apartments"
+      subtitle: "Featured Properties",
+      title: "Top Farm Rentals",
+      description: "Explore our most popular farm properties across Jordan, each offering unique experiences with guaranteed cleanliness and modern amenities.",
+      viewAll: "View All Farms"
     },
     amenities: {
-      subtitle: "Hotel Amenities",
-      title: "Experience The Best",
-      description: "Enjoy our premium facilities and services designed to make your stay exceptional.",
+      subtitle: "Farm Services",
+      title: "Complete Farm Experience",
+      description: "Enjoy our comprehensive services designed to make your farm rental experience exceptional.",
       features: {
         beachfront: {
-          title: "Beachfront Location",
-          description: "Direct access to pristine beaches with crystal clear waters."
+          title: "Sanitized Swimming Pools",
+          description: "All farms feature thoroughly sanitized swimming pools with regular maintenance."
         },
         pools: {
-          title: "Swimming Pools",
-          description: "Relax by our infinity pools with stunning sea views."
+          title: "Family & Youth Categories",
+          description: "Choose from family-friendly farms or youth-oriented adventure properties."
         },
         restaurant: {
-          title: "Gourmet Restaurant",
-          description: "Enjoy exquisite local and international cuisine."
+          title: "Food Service Discounts",
+          description: "Enjoy exclusive discounts on food services and local cuisine."
         },
         wifi: {
-          title: "High-Speed Wi-Fi",
-          description: "Stay connected with complimentary high-speed internet."
+          title: "Transportation Services",
+          description: "Complete bus and transport booking with direct team coordination."
         },
         bar: {
-          title: "Beach Bar & Café",
-          description: "Refreshing drinks and snacks served right on the beach."
+          title: "Customer Support",
+          description: "24/7 support team handling all farm and service communications."
         },
         location: {
-          title: "Prime Location",
-          description: "Close to local attractions, shops, and restaurants."
+          title: "All Governorates",
+          description: "Farm rentals available across all 12 governorates of Jordan."
         }
       }
     },
     cta: {
-      title: "Ready for Your Dream Vacation?",
-      description: "Book your stay today and experience the perfect blend of luxury, comfort, and stunning sea views.",
-      bookNow: "Book Now"
+      title: "Ready for Your Perfect Farm Experience?",
+      description: "Book your farm rental today and enjoy premium facilities, transportation, and complete customer service support.",
+      bookNow: "Book Farm Now"
     }
   },
   apartments: {
-    title: "Our Apartments & Rooms",
-    subtitle: "Discover our selection of premium accommodations, ranging from cozy studios to luxurious penthouses.",
+    title: "Farm Directory",
+    subtitle: "Explore our extensive selection of premium farms across all Jordan governorates.",
     filters: {
       guests: "Guests",
       anyGuests: "Any number of guests",
@@ -113,16 +113,16 @@ export const en = {
       twoPlus: "2+ guests",
       threePlus: "3+ guests",
       fourPlus: "4+ guests",
-      location: "Location",
-      allLocations: "All locations",
+      location: "Governorate",
+      allLocations: "All governorates",
       priceRange: "Price Range",
       showing: "Showing",
       of: "of",
-      accommodations: "accommodations",
+      accommodations: "farms",
       resetFilters: "Reset Filters",
-      noMatch: "No apartments match your filters",
+      noMatch: "No farms match your filters",
       adjustFilters: "Try adjusting your filter criteria to see more options.",
-      viewDetails: "View Details",
+      viewDetails: "View Farm Details",
       features: "features",
       more: "more"
     }

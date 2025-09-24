@@ -4,46 +4,61 @@ import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import BookingForm from "@/components/BookingForm";
 import TestimonialsSection from "@/components/TestimonialsSection";
-import ApartmentCard, { ApartmentProps } from "@/components/ApartmentCard";
+import FarmCard, { FarmProps } from "@/components/FarmCard";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight, Wifi, Utensils, Waves, LifeBuoy, MapPin, Coffee } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-// Sample apartments data
-const featuredApartments: ApartmentProps[] = [
+// Sample farms data
+const featuredFarms: FarmProps[] = [
   {
     id: "1",
-    name: "Deluxe Sea View Suite",
-    description: "Luxurious suite with panoramic sea views, modern amenities, and a private balcony.",
-    price: 180,
-    capacity: 2,
-    size: 45,
-    image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&h=600&fit=crop",
-    location: "Beachfront",
-    features: ["Wi-Fi", "Kitchen", "Bathroom", "Air Conditioning", "TV", "Balcony"]
+    name: "Al-Balqa Family Farm",
+    description: "Premium family-friendly farm with sanitized swimming pool, modern facilities, and authentic farm experiences.",
+    price: 120,
+    capacity: 15,
+    image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&h=600&fit=crop",
+    governorate: "Balqa",
+    category: "family",
+    features: ["Swimming Pool", "BBQ Area", "Children's Playground", "Farm Animals", "Parking"],
+    hasPool: true,
+    poolSanitized: true,
+    cleanlinessRating: 4.8,
+    averageRating: 4.7,
+    reviewCount: 34
   },
   {
-    id: "2",
-    name: "Premium Family Apartment",
-    description: "Spacious apartment ideal for families, with full kitchen and stunning coastal views.",
-    price: 250,
-    capacity: 4,
-    size: 75,
-    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
-    location: "Second row",
-    features: ["Wi-Fi", "Kitchen", "Bathroom", "Air Conditioning", "TV", "Washing Machine"]
+    id: "2", 
+    name: "Irbid Youth Adventure Farm",
+    description: "Exciting youth-oriented farm perfect for group activities, team building, and outdoor adventures.",
+    price: 85,
+    capacity: 25,
+    image: "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?w=800&h=600&fit=crop",
+    governorate: "Irbid",
+    category: "youth",
+    features: ["Sports Field", "Camping Area", "Adventure Activities", "Bonfire Pit", "Wi-Fi"],
+    hasPool: true,
+    poolSanitized: true,
+    cleanlinessRating: 4.6,
+    averageRating: 4.5,
+    reviewCount: 28
   },
   {
     id: "3",
-    name: "Executive Beach Studio",
-    description: "Elegant studio with direct beach access, modern design, and premium finishes.",
-    price: 150,
-    capacity: 2,
-    size: 35,
-    image: "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=800&h=600&fit=crop",
-    location: "Beachfront",
-    features: ["Wi-Fi", "Kitchenette", "Bathroom", "Air Conditioning", "TV"]
+    name: "Amman Premium Farm Resort",
+    description: "Luxury farm experience near Amman with top-tier amenities and exceptional cleanliness standards.",
+    price: 200,
+    capacity: 20,
+    image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop",
+    governorate: "Amman",
+    category: "family",
+    features: ["Luxury Pool", "Restaurant", "Spa Services", "Private Rooms", "Transport Service"],
+    hasPool: true,
+    poolSanitized: true,
+    cleanlinessRating: 5.0,
+    averageRating: 4.9,
+    reviewCount: 67
   }
 ];
 
@@ -201,16 +216,16 @@ export default function Index() {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {featuredApartments.map((apartment, index) => (
-                <div key={apartment.id} className="animate-fade-in" style={{ animationDelay: `${(index + 1) * 100}ms` }}>
-                  <ApartmentCard apartment={apartment} />
+              {featuredFarms.map((farm, index) => (
+                <div key={farm.id} className="animate-fade-in" style={{ animationDelay: `${(index + 1) * 100}ms` }}>
+                  <FarmCard farm={farm} />
                 </div>
               ))}
             </div>
             
             <div className="text-center mt-12">
               <Button asChild className="btn-primary">
-                <Link to="/apartments">
+                <Link to="/farms">
                   {t.home.featuredApartments.viewAll} <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
