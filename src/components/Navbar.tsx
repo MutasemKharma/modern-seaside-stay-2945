@@ -49,6 +49,9 @@ export default function Navbar() {
 
         <div className="hidden md:flex items-center space-x-2">
           <ThemeToggle />
+          <Button asChild variant="outline" size="sm">
+            <Link to="/admin/login">Admin</Link>
+          </Button>
           <Button asChild className="btn-primary">
             <Link to="/booking">{t.nav.bookNow}</Link>
           </Button>

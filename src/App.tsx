@@ -11,6 +11,8 @@ import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import Amenities from "./pages/Amenities";
 import NotFound from "./pages/NotFound";
+import AdminAuth from "./components/admin/AdminAuth";
+import AdminDashboard from "./pages/AdminDashboard";
 import { LanguageProvider } from "./contexts/LanguageContext";
 import { AuthProvider } from "./components/auth/AuthProvider";
 
@@ -32,6 +34,8 @@ const App = () => (
               <Route path="/gallery" element={<Gallery />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/services" element={<Amenities />} />
+              <Route path="/admin/login" element={<AdminAuth />} />
+              <Route path="/admin/dashboard" element={<AdminDashboard />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
