@@ -54,9 +54,9 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				sea: {
-					light: '#E0F2F7',
-					DEFAULT: '#1E88E5',
-					dark: '#0D47A1'
+					light: 'hsl(var(--sea-light))',
+					DEFAULT: 'hsl(var(--sea))',
+					dark: 'hsl(var(--sea-dark))'
 				},
 				sand: {
 					light: '#F5F5DC',
