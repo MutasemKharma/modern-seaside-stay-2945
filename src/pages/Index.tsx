@@ -65,6 +65,8 @@ const featuredFarms: FarmProps[] = [
 export default function Index() {
   const { t } = useLanguage();
   
+  console.log("Index component rendering", { t });
+  
   useEffect(() => {
     // Scroll to top when component mounts
     window.scrollTo(0, 0);
