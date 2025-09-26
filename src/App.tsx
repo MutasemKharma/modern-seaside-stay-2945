@@ -23,31 +23,11 @@ const App = () => {
   console.log("App component rendering");
   
   return (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <AuthProvider>
-        <LanguageProvider>
-          <Toaster />
-          <Sonner />
-          <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/farms" element={<Apartments />} />
-              <Route path="/booking" element={<BookingPage />} />
-              <Route path="/gallery" element={<Gallery />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/services" element={<Amenities />} />
-              <Route path="/admin/login" element={<AdminAuth />} />
-              <Route path="/admin/dashboard" element={<AdminDashboard />} />
-              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </BrowserRouter>
-        </LanguageProvider>
-      </AuthProvider>
-    </TooltipProvider>
-  </QueryClientProvider>
-)
+    <div style={{ padding: '20px', background: 'white', color: 'black' }}>
+      <h1>Test - App is working!</h1>
+      <p>If you see this, React is working.</p>
+    </div>
+  );
 };
 
 export default App;
